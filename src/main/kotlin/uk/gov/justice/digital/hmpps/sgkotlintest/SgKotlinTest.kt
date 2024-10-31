@@ -1,11 +1,11 @@
-package uk.gov.justice.digital.hmpps.templatepackagename
+package uk.gov.justice.digital.hmpps.sgkotlintest
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class HmppsTemplateKotlin
+class SgKotlinTest
 
 fun main(args: Array<String>) {
-  runApplication<HmppsTemplateKotlin>(*args)
+  runApplication<SgKotlinTest>(*args)
 }
