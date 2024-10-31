@@ -4,7 +4,7 @@ orbs:
 parameters:
   releases-slack-channel:
     type: string
-    default: SLACK_RELEASES_CHANNEL
+    default: tmp-james-dev
 jobs:
   validate:
     executor:
@@ -71,7 +71,7 @@ workflows:
   #          pipeline_number: <<pipeline.number>>
   #          context:
   #            - hmpps-common-vars
-  #            - hmpps-template-kotlin-preprod
+  #            - sg-kotlin-test-preprod
   #          requires:
   #            - request-preprod-approval
   #          helm_timeout: 5m
@@ -90,7 +90,7 @@ workflows:
   #          slack_channel_name: << pipeline.parameters.releases-slack-channel >>
   #          context:
   #            - hmpps-common-vars
-  #            - hmpps-template-kotlin-prod
+  #            - sg-kotlin-test-prod
   #          requires:
   #            - request-prod-approval
   #          helm_timeout: 5m
